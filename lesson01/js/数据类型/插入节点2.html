@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="" type="text/css">
+    <script type="text/javascript"></script>
+</head>
+<body>
+
+<p id="js">javascript</p>
+<div id="list">
+    <p id="se">javaSe</p>
+    <p id="ee">javaEe</p>
+    <p id="me">javaMe</p>
+</div>
+<script>
+
+    var ee = document.getElementById('ee');
+    var js = document.getElementById('js');
+    var list = document.getElementById('list');
+    //要包含的节点。insertBefore（新节点newNode,目标节点targetNode）
+    ee.insertBefore(js,ee);
+
+
+</script>
+
+
+</body>
+</html>

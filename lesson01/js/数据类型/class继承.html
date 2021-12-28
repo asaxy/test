@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+        // function  Student(name){
+        //     this.name =name;
+        // }
+        // //给student新增一个方法
+        //
+        // Student.prototype.hello=function (){
+        //     alert('Hello')
+        // }
+        // es6之后
+        //定义一个学生的类     constructor() {} 为构造器
+        class Student{
+
+            constructor(name) {
+                this.name =name;
+            }
+            hello(){
+                alert('hello')
+            }
+        }
+//XiaoStudent继承了上面的 Student
+        class XiaoStudent extends Student{
+            constructor(name,grade) {
+                super(name);
+                this.grade = grade;
+            }
+            myGrade(){
+                alert('我是一名小学生');
+            }
+        }
+
+
+        var xiaoming =new Student("xiaoming")
+        var xiaohong =new XiaoStudent("xiaohong",1)
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

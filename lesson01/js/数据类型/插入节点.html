@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="" type="text/css">
+    <script type="text/javascript"></script>
+</head>
+<body>
+<p id="js">javascript</p>
+<div id="list">
+    <p id="se">javaSe</p>
+    <p id="ee">javaEe</p>
+    <p id="me">javaMe</p>
+</div>
+
+<script>
+
+        var
+            js= document.getElementById('js'),//已存在的节点
+             list= document.getElementById('list');
+
+        //通过js创建一个新节点
+                var newP = document.createElement('p'),id= 'newP';//创建一个p标签
+                newP.id = 'newP';
+                newP.innerText ='Hello,XieYang';
+                list.appendChild(newP);
+        //创建一个标签节点,通过这个属性可以设置任意的值
+            var myScript =document.createElement('script');
+            myScript.setAttribute('type','text/javascript')
+        //可以创建一个style标签
+            var myStyle =document.createElement('style');//创建一个空style标签
+            myStyle.setAttribute('type','text/css');
+            myStyle.innerHTML ='body{background: chartreuse;}';//设置标签内容
+            document.getElementsByTagName('head')[0].appendChild(myStyle)
+</script>
+
+</body>
+</html>

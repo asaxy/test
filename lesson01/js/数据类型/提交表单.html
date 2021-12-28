@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="md5.js"></script>
+
+</head>
+<body>
+
+<form action="#" method="post">
+    <p> <span>用户名:</span><input type="text" id="username" name="username">
+    </p>
+    <p>
+        <span>密码:</span><input type="text" id="input-password">
+    </p>
+    <input type="hidden"id="md5-password" name="password">
+<!--        绑定事件   onclick 被点击的时候-->
+
+    <button type="submit" onclick="aaa()">提交</button>
+
+
+</form>
+
+<script>
+    function aaa(){
+       var uname = document.getElementById('usename')
+       var pwd = document.getElementById('input-password')
+       var md5pwd = document.getElementById('md5-password')
+        console.log(uname.value);
+       //
+        pwd.value =md5(pwd.value);
+        console.log(pwd.value);
+        //MD5 算法
+
+        md5pwd.value =md5(pwd.value)
+    }
+
+</script>
+
+
+</body>
+</html>

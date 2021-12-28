@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.6.0.js"></script>
+
+</head>
+<body>
+
+<ul id="test-ul">
+
+    <li class="js">javascript</li>
+    <li name="python">python</li>
+</ul>
+
+<script>
+    //js原生写法  document.getElementById('test-ul')
+    //jQuery写法
+    $('#test-ul li[name=python]').text();           //获得值
+    $('#test-ul li[name=python]').text('设置值');           //设置值
+    $('#test-ul').html();
+</script>
+
+
+
+
+
+
+</body>
+</html>
